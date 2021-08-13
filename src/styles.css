@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+
+:root {
+  --black: #1d1d1d;
+  --white: #faf7ff;
+  --accent-color: #00c6cf;
+  --inter: "Inter", sans-serif;
+  --box-width: 90%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--inter);
+  color: var(--black);
+  min-height: 100vh;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin: 1rem;
+}
+
+h2 {
+  width: var(--box-width);
+  background-color: var(--accent-color);
+  color: white;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 5px;
+}
+
+.text-heightlight {
+  font-weight: 600;
+}
+
+.msg-date-format {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  width: fit-content;
+  padding: 1rem;
+  margin: 1rem auto;
+  border: 2px solid var(--black);
+  border-radius: 10px;
+}
+
+span {
+  margin: 0.3rem 0rem;
+}
+
+form {
+  background: rgba(0, 0, 0, 0.8);
+  color: var(--white);
+  border-radius: 5px;
+  width: var(--box-width);
+  margin: 0.5rem auto;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+label {
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+input,
+button {
+  margin: 0.5rem 0rem;
+  padding: 0.4rem;
+  border-radius: 5px;
+}
+
+button {
+  background: var(--accent-color);
+  color: white;
+  font-size: 1.05rem;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+}
+
+#output-container {
+  text-align: center;
+  width: var(--box-width);
+  margin: 1rem auto;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 500px) {
+  :root {
+    --box-width: 60%;
+  }
+}
+
+@media screen and (min-width: 765px) {
+  :root {
+    --box-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1125px) {
+  :root {
+    --box-width: 30%;
+  }
+}

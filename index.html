@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Palindrome birthday | VanillaJS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+
+  <body>
+    <h1>Palindrome Birthday Checker</h1>
+    <h2>
+      Enter your birthdate and we will tell you if your birthdate is a
+      palindrome
+    </h2>
+    <small class="msg-date-format">
+      This app checks your birthdate in 6 formats -
+      <span class="text-heightlight">DD-MM-YYYY</span>
+      <span class="text-heightlight">MM-DD-YYYY</span>
+      <span class="text-heightlight">YYYY-MM-DD</span>
+      <span class="text-heightlight">DD-MM-YY</span>
+      <span class="text-heightlight">MM-DD-YY</span>
+      <span class="text-heightlight">YY-MM-DD</span>
+    </small>
+    <form action="#">
+      <label for="dob">Enter your DOB</label>
+      <input type="date" name="dob" id="dob" required />
+      <button id="check-btn" type="submit">Check</button>
+    </form>
+    <div id="output-container"></div>
+    <script src="src/index.js" type="module"></script>
+  </body>
+</html>
